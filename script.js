@@ -24,7 +24,8 @@ function animate() {
 
     drawBackground();
 
-    [...meteors, ...clouds, ...grounds].forEach(object=> {
+    [...meteors, ...clouds, ...grounds]
+    .forEach(object=> {
         object.update(gameFrame);
         object.draw();
     })
